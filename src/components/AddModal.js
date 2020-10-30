@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Modal, Button} from "react-bootstrap";
 
+
 function AddModal( {add}) {
   const [show, setShow] = useState(false);
   const [newMovie,setNewMovie] = useState(
@@ -53,6 +54,7 @@ function AddModal( {add}) {
             <Button variant="primary" onClick={()=>add(newMovie)} >Add Movie</Button>
           </Modal.Footer>
           </Modal>
+        
     </div>
   )
 }
